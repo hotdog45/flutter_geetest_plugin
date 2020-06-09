@@ -172,6 +172,7 @@ public class FlutterGeetestPlugin implements MethodCallHandler {
             gt3ConfigBean.setApi1Json(parmas);
             gt3GeetestUtils.getGeetest();
         }
+        
     }
 
 }
