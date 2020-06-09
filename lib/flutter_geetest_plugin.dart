@@ -11,13 +11,12 @@ class FlutterGeetestPlugin {
     return version;
   }
 
-  ///一键验证
-  static Future<String> getGeetest(String api1, String api2) async {
-    final Map<String, dynamic> params = <String, dynamic>{
-      'api1': api1,
-      'api2': api2
-    };
-    final String result = await _channel.invokeMethod('getGeetest', params);
-    return result;
-  }
+ ///一键验证
+ static Future<String> getGeetest(String challenge) async {
+   final Map<String, dynamic> params = <String, dynamic>{
+     'challenge': challenge,
+   };
+   final String result = await _channel.invokeMethod('getGeetest', params);
+   return result;
+ }
 }
