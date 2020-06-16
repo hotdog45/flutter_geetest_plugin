@@ -16,6 +16,7 @@ Geetest(GT3Captcha) Flutter plugin(Geetest&#x27;s CAPTCHA - a user-friendly CAPT
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.dependency 'GT3Captcha-iOS'
+  s.static_framework = true
 
   s.ios.deployment_target = '8.0'
 end
